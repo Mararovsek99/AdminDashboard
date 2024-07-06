@@ -2,6 +2,10 @@
     font-family: Roboto-Bold;
     src: url(fonts/Roboto-Bold.ttf);
 }
+@font-face{
+    font-family: Roboto-Medium;
+    src: url(fonts/Roboto-Regular.ttf);
+}
 
 *{
     margin: 0px;
@@ -40,7 +44,7 @@
  grid-row: 2/3;
  display: grid;
  grid-template-columns: 20fr 7fr;
- grid-template-rows: 50px 1fr 90px 1fr ;
+ grid-template-rows: 50px auto 90px 1fr ;
  padding: 30px;
  
 }
@@ -70,10 +74,19 @@
     padding: 20px;
     font-size: 25px;
     font-family: Roboto-Bold ;
+    cursor: pointer;
+}
+.dashText:hover{
+    border-bottom: solid 3px #f0b429 ;
+    padding-bottom: 11px;
+    font-size: 30px;
+    color: #252525;
 }
 .dashboardLinksDown{
-    position: relative;
-    bottom: 80px;
+    position: absolute;
+    top: 750px;
+    left: 35px;
+    width: 326px;
 }
 .headerUp,
 .headerDown{
@@ -161,7 +174,34 @@ input{
 .projects{
     grid-column: 1 / 2;
     grid-row: 2 / 5;
-    margin-right: 20px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 300px) ;
+    gap: 40px;;
+}
+.projects > div {
+    border-radius: 15px;
+    background-color: #ffffff;
+    border-left: solid 10px #f0b429;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.projects img{
+    height: 32px;
+}
+.projects p{
+    font-family: Roboto-Medium;
+    font-size: 22px;
+    color: #636363;
+}
+.projects .icons{
+    display: flex;
+    justify-content: end;
+    gap: 35px;
+    margin-right: 10px;
+    margin-top: 20px;
 }
 h1{
     font-size: 25px;
