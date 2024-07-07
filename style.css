@@ -154,9 +154,11 @@
     background-color: #1992d4 ;
     font-family: Roboto-Bold;
     font-size: 20px;
+    cursor: pointer;
 }
 .headerUp img{
     height: 30px;
+    cursor: pointer;
 }
 #profilePhoto2{
     height: 90px;
@@ -177,7 +179,7 @@ input{
     margin-right: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fill, 300px) ;
+    grid-template-rows: repeat(auto-fill, min-content) ;
     gap: 40px;;
 }
 .projects > div {
@@ -190,6 +192,7 @@ input{
 }
 .projects img{
     height: 32px;
+    cursor: pointer;
 }
 .projects p{
     font-family: Roboto-Medium;
